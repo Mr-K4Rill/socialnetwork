@@ -1,0 +1,26 @@
+.profile {
+  grid-area: p;
+  border-radius: 25px;
+}
+
+.about_me img {
+  width: 300px;
+}
+.about_me span {
+ margin-top: 15px;
+ margin-left: 20px;
+ font-size: 40px;
+}
+.about_me {
+  display: flex;
+}
+.post img {
+  width: 60px;
+  margin-right: 10px;
+}
+.post {
+  margin-top: 30px;
+}
+.text {
+  display: block;
+}

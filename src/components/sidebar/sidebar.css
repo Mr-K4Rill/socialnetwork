@@ -1,0 +1,14 @@
+.sidebar {
+  grid-area: s;
+  height: 800px;
+  border-radius: 25px;
+  display: block;
+}
+
+.sidebar a {
+  display: block;
+  padding: 30px;
+  margin-top: 15px;
+  font-size: 30px;
+  text-align: center;
+}

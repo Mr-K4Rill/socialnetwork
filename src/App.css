@@ -1,0 +1,18 @@
+body {
+  margin:  0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #040216;
+  color: white;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas: "h h" 
+                       "s p";
+  grid-gap: 20px;
+  grid-template-columns: 4fr 10fr;
+
+}
+.wrapper div {
+  background: rgb(70, 79, 121)
+}

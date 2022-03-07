@@ -8,7 +8,7 @@ function App() {
 		<div class="wrapper">
 			<Header />
 			<Sidebar />
-			<Profile />
+			<Profile name = "Elon Mask"/>
 		</div>
 	);
 }

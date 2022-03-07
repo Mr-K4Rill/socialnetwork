@@ -1,23 +1,15 @@
 import React from 'react';
 import './profile.css';
+import Posts from "./posts.jsx"
 
-function Profile() {
+function Profile(props) {
 	return(
 		<div class="profile">
 			<div class="about_me">
 				<img src={require("./be-active_640.jpg")} />
-				<span>Elon Mask</span>
+				<span>{props.name}</span>
 			</div>
-			<div class="my_posts">
-				<h2>My Posts</h2>
-				<input placeholder="enter the post" />
-				<button>Add post</button>
-				<div class="post">
-					<img src={require("./be-active_640.jpg")} />
-					<span>Elon Mask</span>
-					<p class="text">Some text</p>
-				</div>
-			</div>
+			<Posts />
 		</div>
 	);
 }

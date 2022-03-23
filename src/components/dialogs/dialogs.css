@@ -1,0 +1,21 @@
+.message {
+	display: flex;
+	align-items: center;
+}
+.message a {
+	box-sizing: border-box;
+	width: 30%;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.message a:hover {
+	color: gray;
+}
+.message p {
+	width: 65%;
+	background-color: #040216;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}

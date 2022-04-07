@@ -9,7 +9,7 @@ function Profile(props) {
 				<img src={require("./be-active_640.jpg")} />
 				<span>{props.name}</span>
 			</div>
-			<Posts />
+			<Posts DataPost = {props.DataPost} />
 		</div>
 	);
 }

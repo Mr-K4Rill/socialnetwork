@@ -28,3 +28,8 @@
 .my_posts {
   margin-left: 20px;
 }
+.likes {
+  padding: 3px;
+  color: blue;
+  background-color: white;
+}

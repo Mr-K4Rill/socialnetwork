@@ -1,12 +1,13 @@
 import React from 'react';
 import './profile.css';
+import ProfileInfo from './profile_info'
+import ProfileText from './profile_text'
 
 function Post(props) {
 	return(
 		<div class="post">
-			<img src={require("./be-active_640.jpg")} />
-			<span>Elon Mask</span>
-			<p class="text">{props.message}{props.goodbye}</p>
+			<ProfileInfo />	
+			<ProfileText message = {props.message} likes = {props.likes} />		
 		</div>
 	)
 }

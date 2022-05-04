@@ -5,7 +5,7 @@ import ProfileText from './profile_text'
 
 function Post(props) {
 	return(
-		<div class="post">
+		<div className="post">
 			<ProfileInfo />	
 			<ProfileText message = {props.message} likes = {props.likes} />		
 		</div>

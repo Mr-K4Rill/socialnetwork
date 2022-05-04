@@ -4,8 +4,8 @@ import './profile.css';
 function ProfileText(props) {
 	return(
 		<>
-		<p class="text">{props.message}</p>
-		<span class="likes">{props.likes} Likes</span>
+		<p className="text">{props.message}</p>
+		<span className="likes">{props.likes} Likes</span>
 		</>
 	)
 }

@@ -1,4 +1,5 @@
 import renderthree from "../render.jsx"
+// import state from '../render.jsx'
 
 let Data = {
        DataPost:[{message:"Привет", id:"1", likes: 3},
@@ -12,7 +13,9 @@ let Data = {
 
        guys:[{name:"Steve", img:"./find-contact_640.jpg"},
               {name:"Kirill", img:"./football_767.jpg"},
-              {name:"John", img:"./work-it_640.jpg"}]    
+              {name:"John", img:"./work-it_640.jpg"}],
+
+       NewPostText:"Привет"   
 }
 
 export let addPost =(i)=> {
@@ -21,9 +24,12 @@ export let addPost =(i)=> {
                      id: 1 ,
                      likes: 2
               }
-              Data.DataPost.unshift(newPost)
-              console.log(Data.DataPost)
-              renderthree()
+              if (i !== "") {
+                     Data.DataPost.unshift(newPost)
+                     // console.log(Data.DataPost)
+                     renderthree()    
+              }
+              
        }
 
 export let addDialog =(i)=> {
@@ -32,9 +38,12 @@ export let addDialog =(i)=> {
               id: 1 ,
               text: i ,
        }
-       Data.names.unshift(newDialog)
-       console.log(Data.names)
-       renderthree()
+       if (i !== "") {
+              Data.names.unshift(newDialog)
+              // console.log(Data.names)
+              renderthree()
+       }
+       
 
 }
 

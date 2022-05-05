@@ -6,10 +6,10 @@ function Profile(props) {
 	return(
 		<div className="profile">
 			<div className="about_me">
-				<img src={require("./be-active_640.jpg")} />
+				<img src={require("./be-active_640.jpg")} alt="icon" />
 				<span>{props.name}</span>
 			</div>
-			<Posts DataPost = {props.DataPost} addPost = {props.addPost} />
+			<Posts DataPost = {props.DataPost} addPost = {props.addPost} NewPostText={props.NewPostText}/>
 		</div>
 	);
 }

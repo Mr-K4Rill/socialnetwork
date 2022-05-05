@@ -11,7 +11,7 @@ function Posts(props) {
 	return(
 		<div className="my_posts">
 			<h2>My Posts</h2>
-			<input ref = {postText} placeholder="enter the post" />
+			<input value={props.NewPostText} ref = {postText} placeholder="enter the post" />
 			<button onClick = {addPost}>Add post</button>
 			{props.DataPost.map((e) => <Post message = {e.message} id = {e.id} likes = {e.likes} />)}	
 		</div>

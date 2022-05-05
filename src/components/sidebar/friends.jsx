@@ -10,6 +10,7 @@ function Friends(props) {
 			<div className="FriendsContent">
 				{props.guys.map((e) => <Friend name = {e.name} img = {e.img} /> )}
 			</div>
+			<input value="asdfg" />
 		</div>
 	)
 }

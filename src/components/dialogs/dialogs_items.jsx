@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function DialogsItems(props) {
 	return(
-		<div class="message">
+		<div className="message">
 			<Link to={`/messages/${props.id}`}>{props.name}</Link>
 			<p>{props.text}</p>
 		</div>
